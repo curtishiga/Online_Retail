@@ -1,0 +1,2216 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Online Retail_clean)' inline='true' name='federated.15bitu516t4fv81c6rg4j0k4gh6y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Online Retail_clean' name='excel-direct.1rvp0h004fd07e1ghohy9077bdz3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Chiga/Desktop/Projects/Online_Retail/Data/Online Retail_clean.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1rvp0h004fd07e1ghohy9077bdz3' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='InvoiceNo' ordinal='0' />
+            <column datatype='string' name='StockCode' ordinal='1' />
+            <column datatype='string' name='Description' ordinal='2' />
+            <column datatype='integer' name='Quantity' ordinal='3' />
+            <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+            <column datatype='real' name='UnitPrice' ordinal='5' />
+            <column datatype='integer' name='CustomerID' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H10001:no:A1:H10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceNo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvoiceNo]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>InvoiceNo</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockCode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[StockCode]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>StockCode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[InvoiceDate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>InvoiceDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UnitPrice]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>UnitPrice</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CustomerID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cohort' datatype='datetime' name='[Calculation_1124492588321918981]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='{FIXED([CustomerID]):MIN([InvoiceDate])}' />
+      </column>
+      <column aggregation='Sum' caption='Cohort Index' datatype='integer' datatype-customized='true' name='[Calculation_1124492588331532295]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='INT(DATEDIFF(&apos;month&apos;,[Calculation_1124492588321918981],[InvoiceDate]))' />
+      </column>
+      <column caption='Retention Pct' datatype='real' name='[Calculation_1124492588625010696]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(COUNTD([CustomerID]))/sum(&#13;&#10;    {FIXED [Calculation_1124492588331532295],DATETRUNC(&apos;month&apos;,[Calculation_1124492588321918981]):sum({FIXED DATETRUNC(&apos;month&apos;,[Calculation_1124492588321918981]):countd([CustomerID])})})' />
+      </column>
+      <column caption='Total Price Invoiced' datatype='real' name='[Calculation_1124492588637716494]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[UnitPrice]*[Quantity]' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[First Invoice Date (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Calculation_1124492588321918981]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Dec 2010&quot;'>
+            <value>#2010-12-01 08:26:00#</value>
+            <value>#2010-12-01 08:34:00#</value>
+            <value>#2010-12-01 08:45:00#</value>
+            <value>#2010-12-01 09:00:00#</value>
+            <value>#2010-12-01 09:09:00#</value>
+            <value>#2010-12-01 09:32:00#</value>
+            <value>#2010-12-01 09:37:00#</value>
+            <value>#2010-12-01 09:41:00#</value>
+            <value>#2010-12-01 09:45:00#</value>
+            <value>#2010-12-01 09:53:00#</value>
+            <value>#2010-12-01 09:56:00#</value>
+            <value>#2010-12-01 09:57:00#</value>
+            <value>#2010-12-01 09:59:00#</value>
+            <value>#2010-12-01 10:03:00#</value>
+            <value>#2010-12-01 10:19:00#</value>
+            <value>#2010-12-01 10:24:00#</value>
+            <value>#2010-12-01 10:29:00#</value>
+            <value>#2010-12-01 10:37:00#</value>
+            <value>#2010-12-01 10:39:00#</value>
+            <value>#2010-12-01 10:47:00#</value>
+            <value>#2010-12-01 10:51:00#</value>
+            <value>#2010-12-01 10:52:00#</value>
+            <value>#2010-12-01 11:21:00#</value>
+            <value>#2010-12-01 11:22:00#</value>
+            <value>#2010-12-01 11:27:00#</value>
+            <value>#2010-12-01 11:29:00#</value>
+            <value>#2010-12-01 11:32:00#</value>
+            <value>#2010-12-01 11:41:00#</value>
+            <value>#2010-12-01 11:45:00#</value>
+            <value>#2010-12-01 11:49:00#</value>
+            <value>#2010-12-01 11:52:00#</value>
+            <value>#2010-12-01 11:57:00#</value>
+            <value>#2010-12-01 11:58:00#</value>
+            <value>#2010-12-01 12:03:00#</value>
+            <value>#2010-12-01 12:08:00#</value>
+            <value>#2010-12-01 12:12:00#</value>
+            <value>#2010-12-01 12:15:00#</value>
+            <value>#2010-12-01 12:22:00#</value>
+            <value>#2010-12-01 12:23:00#</value>
+            <value>#2010-12-01 12:27:00#</value>
+            <value>#2010-12-01 12:31:00#</value>
+            <value>#2010-12-01 12:35:00#</value>
+            <value>#2010-12-01 12:36:00#</value>
+            <value>#2010-12-01 12:38:00#</value>
+            <value>#2010-12-01 12:40:00#</value>
+            <value>#2010-12-01 12:43:00#</value>
+            <value>#2010-12-01 12:48:00#</value>
+            <value>#2010-12-01 12:49:00#</value>
+            <value>#2010-12-01 12:50:00#</value>
+            <value>#2010-12-01 12:51:00#</value>
+            <value>#2010-12-01 12:54:00#</value>
+            <value>#2010-12-01 12:58:00#</value>
+            <value>#2010-12-01 13:04:00#</value>
+            <value>#2010-12-01 13:17:00#</value>
+            <value>#2010-12-01 13:20:00#</value>
+            <value>#2010-12-01 13:21:00#</value>
+            <value>#2010-12-01 13:23:00#</value>
+            <value>#2010-12-01 13:24:00#</value>
+            <value>#2010-12-01 13:31:00#</value>
+            <value>#2010-12-01 13:33:00#</value>
+            <value>#2010-12-01 13:38:00#</value>
+            <value>#2010-12-01 13:45:00#</value>
+            <value>#2010-12-01 13:51:00#</value>
+            <value>#2010-12-01 13:54:00#</value>
+            <value>#2010-12-01 14:03:00#</value>
+            <value>#2010-12-01 14:05:00#</value>
+            <value>#2010-12-01 14:11:00#</value>
+            <value>#2010-12-01 14:30:00#</value>
+            <value>#2010-12-01 14:33:00#</value>
+            <value>#2010-12-01 14:34:00#</value>
+            <value>#2010-12-01 14:38:00#</value>
+            <value>#2010-12-01 14:54:00#</value>
+            <value>#2010-12-01 15:00:00#</value>
+            <value>#2010-12-01 15:06:00#</value>
+            <value>#2010-12-01 15:08:00#</value>
+            <value>#2010-12-01 15:21:00#</value>
+            <value>#2010-12-01 15:27:00#</value>
+            <value>#2010-12-01 15:35:00#</value>
+            <value>#2010-12-01 15:37:00#</value>
+            <value>#2010-12-01 15:40:00#</value>
+            <value>#2010-12-01 15:45:00#</value>
+            <value>#2010-12-01 16:01:00#</value>
+            <value>#2010-12-01 16:15:00#</value>
+            <value>#2010-12-01 16:21:00#</value>
+            <value>#2010-12-01 16:24:00#</value>
+            <value>#2010-12-01 16:25:00#</value>
+            <value>#2010-12-01 16:33:00#</value>
+            <value>#2010-12-01 16:49:00#</value>
+            <value>#2010-12-01 16:52:00#</value>
+            <value>#2010-12-01 16:57:00#</value>
+            <value>#2010-12-01 17:15:00#</value>
+            <value>#2010-12-01 17:22:00#</value>
+            <value>#2010-12-01 17:24:00#</value>
+            <value>#2010-12-01 17:35:00#</value>
+            <value>#2010-12-02 07:48:00#</value>
+            <value>#2010-12-02 07:49:00#</value>
+            <value>#2010-12-02 08:43:00#</value>
+            <value>#2010-12-02 08:52:00#</value>
+            <value>#2010-12-02 09:10:00#</value>
+            <value>#2010-12-02 09:29:00#</value>
+            <value>#2010-12-02 09:37:00#</value>
+            <value>#2010-12-02 09:43:00#</value>
+            <value>#2010-12-02 09:44:00#</value>
+            <value>#2010-12-02 10:09:00#</value>
+            <value>#2010-12-02 10:10:00#</value>
+            <value>#2010-12-02 10:17:00#</value>
+            <value>#2010-12-02 10:27:00#</value>
+            <value>#2010-12-02 10:35:00#</value>
+            <value>#2010-12-02 10:37:00#</value>
+            <value>#2010-12-02 10:39:00#</value>
+            <value>#2010-12-02 10:45:00#</value>
+            <value>#2010-12-02 10:46:00#</value>
+            <value>#2010-12-02 10:53:00#</value>
+            <value>#2010-12-02 11:02:00#</value>
+            <value>#2010-12-02 11:20:00#</value>
+            <value>#2010-12-02 11:21:00#</value>
+            <value>#2010-12-02 11:22:00#</value>
+            <value>#2010-12-02 11:23:00#</value>
+            <value>#2010-12-02 11:41:00#</value>
+            <value>#2010-12-02 11:45:00#</value>
+            <value>#2010-12-02 11:56:00#</value>
+            <value>#2010-12-02 12:07:00#</value>
+            <value>#2010-12-02 12:09:00#</value>
+            <value>#2010-12-02 12:10:00#</value>
+            <value>#2010-12-02 12:11:00#</value>
+            <value>#2010-12-02 12:16:00#</value>
+            <value>#2010-12-02 12:18:00#</value>
+            <value>#2010-12-02 12:22:00#</value>
+            <value>#2010-12-02 12:28:00#</value>
+            <value>#2010-12-02 12:33:00#</value>
+            <value>#2010-12-02 12:47:00#</value>
+            <value>#2010-12-02 12:50:00#</value>
+            <value>#2010-12-02 12:58:00#</value>
+            <value>#2010-12-02 13:06:00#</value>
+            <value>#2010-12-02 13:08:00#</value>
+            <value>#2010-12-02 13:11:00#</value>
+            <value>#2010-12-02 13:14:00#</value>
+            <value>#2010-12-02 13:32:00#</value>
+            <value>#2010-12-02 13:36:00#</value>
+            <value>#2010-12-02 13:38:00#</value>
+            <value>#2010-12-02 13:39:00#</value>
+            <value>#2010-12-02 13:44:00#</value>
+            <value>#2010-12-02 13:45:00#</value>
+            <value>#2010-12-02 13:49:00#</value>
+            <value>#2010-12-02 14:09:00#</value>
+            <value>#2010-12-02 14:23:00#</value>
+            <value>#2010-12-02 14:26:00#</value>
+            <value>#2010-12-02 14:29:00#</value>
+            <value>#2010-12-02 14:30:00#</value>
+            <value>#2010-12-02 14:40:00#</value>
+            <value>#2010-12-02 14:42:00#</value>
+            <value>#2010-12-02 14:47:00#</value>
+            <value>#2010-12-02 15:00:00#</value>
+            <value>#2010-12-02 15:03:00#</value>
+            <value>#2010-12-02 15:08:00#</value>
+            <value>#2010-12-02 15:18:00#</value>
+            <value>#2010-12-02 15:19:00#</value>
+            <value>#2010-12-02 15:39:00#</value>
+            <value>#2010-12-02 15:40:00#</value>
+            <value>#2010-12-02 15:46:00#</value>
+            <value>#2010-12-02 15:49:00#</value>
+            <value>#2010-12-02 15:55:00#</value>
+            <value>#2010-12-02 16:00:00#</value>
+            <value>#2010-12-02 16:12:00#</value>
+            <value>#2010-12-02 16:29:00#</value>
+            <value>#2010-12-02 16:34:00#</value>
+            <value>#2010-12-02 16:38:00#</value>
+            <value>#2010-12-02 16:42:00#</value>
+            <value>#2010-12-02 16:45:00#</value>
+            <value>#2010-12-02 16:46:00#</value>
+            <value>#2010-12-02 16:48:00#</value>
+            <value>#2010-12-02 16:59:00#</value>
+            <value>#2010-12-02 17:03:00#</value>
+            <value>#2010-12-02 17:05:00#</value>
+            <value>#2010-12-02 17:08:00#</value>
+            <value>#2010-12-02 17:09:00#</value>
+            <value>#2010-12-02 17:12:00#</value>
+            <value>#2010-12-02 17:14:00#</value>
+            <value>#2010-12-02 17:17:00#</value>
+            <value>#2010-12-02 17:19:00#</value>
+            <value>#2010-12-02 17:22:00#</value>
+            <value>#2010-12-02 17:24:00#</value>
+            <value>#2010-12-02 17:27:00#</value>
+            <value>#2010-12-02 17:35:00#</value>
+            <value>#2010-12-02 17:36:00#</value>
+            <value>#2010-12-02 17:38:00#</value>
+            <value>#2010-12-02 17:41:00#</value>
+            <value>#2010-12-02 17:48:00#</value>
+            <value>#2010-12-02 17:51:00#</value>
+            <value>#2010-12-02 18:06:00#</value>
+            <value>#2010-12-02 18:15:00#</value>
+            <value>#2010-12-02 18:23:00#</value>
+            <value>#2010-12-02 18:25:00#</value>
+            <value>#2010-12-02 18:27:00#</value>
+            <value>#2010-12-02 18:45:00#</value>
+            <value>#2010-12-02 18:49:00#</value>
+            <value>#2010-12-02 19:18:00#</value>
+            <value>#2010-12-02 19:59:00#</value>
+            <value>#2010-12-03 09:31:00#</value>
+            <value>#2010-12-03 09:45:00#</value>
+            <value>#2010-12-03 09:47:00#</value>
+            <value>#2010-12-03 09:49:00#</value>
+            <value>#2010-12-03 09:51:00#</value>
+            <value>#2010-12-03 10:07:00#</value>
+            <value>#2010-12-03 10:09:00#</value>
+            <value>#2010-12-03 10:11:00#</value>
+            <value>#2010-12-03 10:26:00#</value>
+            <value>#2010-12-03 10:33:00#</value>
+            <value>#2010-12-03 10:36:00#</value>
+            <value>#2010-12-03 10:43:00#</value>
+            <value>#2010-12-03 10:44:00#</value>
+            <value>#2010-12-03 11:19:00#</value>
+            <value>#2010-12-03 11:35:00#</value>
+            <value>#2010-12-03 11:42:00#</value>
+            <value>#2010-12-03 12:05:00#</value>
+            <value>#2010-12-03 12:11:00#</value>
+            <value>#2010-12-03 12:20:00#</value>
+            <value>#2010-12-03 12:24:00#</value>
+            <value>#2010-12-03 12:28:00#</value>
+            <value>#2010-12-03 12:43:00#</value>
+            <value>#2010-12-03 12:48:00#</value>
+            <value>#2010-12-03 12:57:00#</value>
+            <value>#2010-12-03 13:09:00#</value>
+            <value>#2010-12-03 13:12:00#</value>
+            <value>#2010-12-03 13:40:00#</value>
+            <value>#2010-12-03 13:42:00#</value>
+            <value>#2010-12-03 13:43:00#</value>
+            <value>#2010-12-03 13:59:00#</value>
+            <value>#2010-12-03 14:18:00#</value>
+            <value>#2010-12-03 14:26:00#</value>
+            <value>#2010-12-03 14:30:00#</value>
+            <value>#2010-12-03 14:40:00#</value>
+            <value>#2010-12-03 14:54:00#</value>
+            <value>#2010-12-03 15:05:00#</value>
+            <value>#2010-12-03 15:14:00#</value>
+            <value>#2010-12-03 15:16:00#</value>
+            <value>#2010-12-03 15:19:00#</value>
+            <value>#2010-12-03 15:25:00#</value>
+            <value>#2010-12-03 15:45:00#</value>
+            <value>#2010-12-03 16:02:00#</value>
+            <value>#2010-12-03 16:35:00#</value>
+            <value>#2010-12-03 16:44:00#</value>
+            <value>#2010-12-03 17:20:00#</value>
+            <value>#2010-12-03 17:28:00#</value>
+            <value>#2010-12-05 10:03:00#</value>
+            <value>#2010-12-05 10:12:00#</value>
+            <value>#2010-12-05 10:25:00#</value>
+            <value>#2010-12-05 10:27:00#</value>
+            <value>#2010-12-05 10:36:00#</value>
+            <value>#2010-12-05 10:45:00#</value>
+            <value>#2010-12-05 10:48:00#</value>
+            <value>#2010-12-05 10:52:00#</value>
+            <value>#2010-12-05 10:54:00#</value>
+            <value>#2010-12-05 10:58:00#</value>
+            <value>#2010-12-05 11:02:00#</value>
+            <value>#2010-12-05 11:04:00#</value>
+            <value>#2010-12-05 11:10:00#</value>
+            <value>#2010-12-05 11:15:00#</value>
+            <value>#2010-12-05 11:38:00#</value>
+            <value>#2010-12-05 11:40:00#</value>
+            <value>#2010-12-05 11:45:00#</value>
+            <value>#2010-12-05 11:51:00#</value>
+            <value>#2010-12-05 11:54:00#</value>
+            <value>#2010-12-05 11:57:00#</value>
+            <value>#2010-12-05 11:59:00#</value>
+            <value>#2010-12-05 12:00:00#</value>
+            <value>#2010-12-05 12:08:00#</value>
+            <value>#2010-12-05 12:09:00#</value>
+            <value>#2010-12-05 12:13:00#</value>
+            <value>#2010-12-05 12:15:00#</value>
+            <value>#2010-12-05 12:23:00#</value>
+            <value>#2010-12-05 12:26:00#</value>
+            <value>#2010-12-05 12:29:00#</value>
+            <value>#2010-12-05 12:34:00#</value>
+            <value>#2010-12-05 12:35:00#</value>
+            <value>#2010-12-05 12:43:00#</value>
+            <value>#2010-12-05 12:44:00#</value>
+            <value>#2010-12-05 12:47:00#</value>
+            <value>#2010-12-05 12:57:00#</value>
+            <value>#2010-12-05 13:00:00#</value>
+            <value>#2010-12-05 13:03:00#</value>
+            <value>#2010-12-05 13:05:00#</value>
+            <value>#2010-12-05 13:08:00#</value>
+            <value>#2010-12-05 13:10:00#</value>
+            <value>#2010-12-05 13:18:00#</value>
+            <value>#2010-12-05 13:21:00#</value>
+            <value>#2010-12-05 13:26:00#</value>
+            <value>#2010-12-05 13:42:00#</value>
+            <value>#2010-12-05 13:49:00#</value>
+            <value>#2010-12-05 13:53:00#</value>
+            <value>#2010-12-05 13:55:00#</value>
+            <value>#2010-12-05 14:02:00#</value>
+            <value>#2010-12-05 14:06:00#</value>
+            <value>#2010-12-05 14:17:00#</value>
+            <value>#2010-12-05 14:25:00#</value>
+            <value>#2010-12-05 14:45:00#</value>
+            <value>#2010-12-05 14:52:00#</value>
+            <value>#2010-12-05 15:12:00#</value>
+            <value>#2010-12-05 15:15:00#</value>
+            <value>#2010-12-05 15:18:00#</value>
+            <value>#2010-12-05 15:21:00#</value>
+            <value>#2010-12-05 15:35:00#</value>
+            <value>#2010-12-05 15:38:00#</value>
+            <value>#2010-12-05 15:40:00#</value>
+            <value>#2010-12-05 15:46:00#</value>
+            <value>#2010-12-05 15:47:00#</value>
+            <value>#2010-12-05 15:54:00#</value>
+            <value>#2010-12-05 16:00:00#</value>
+            <value>#2010-12-05 16:10:00#</value>
+            <value>#2010-12-05 16:24:00#</value>
+            <value>#2010-12-06 08:34:00#</value>
+            <value>#2010-12-06 08:42:00#</value>
+            <value>#2010-12-06 09:21:00#</value>
+            <value>#2010-12-06 09:31:00#</value>
+            <value>#2010-12-06 09:37:00#</value>
+            <value>#2010-12-06 09:40:00#</value>
+            <value>#2010-12-06 09:52:00#</value>
+            <value>#2010-12-06 10:05:00#</value>
+            <value>#2010-12-06 10:18:00#</value>
+            <value>#2010-12-06 10:19:00#</value>
+            <value>#2010-12-06 10:20:00#</value>
+            <value>#2010-12-06 10:27:00#</value>
+            <value>#2010-12-06 10:34:00#</value>
+            <value>#2010-12-06 10:36:00#</value>
+            <value>#2010-12-06 10:43:00#</value>
+            <value>#2010-12-06 11:01:00#</value>
+            <value>#2010-12-06 11:10:00#</value>
+            <value>#2010-12-06 11:16:00#</value>
+            <value>#2010-12-06 11:26:00#</value>
+            <value>#2010-12-06 11:37:00#</value>
+            <value>#2010-12-06 11:38:00#</value>
+            <value>#2010-12-06 11:42:00#</value>
+            <value>#2010-12-06 11:47:00#</value>
+            <value>#2010-12-06 11:58:00#</value>
+            <value>#2010-12-06 12:00:00#</value>
+            <value>#2010-12-06 12:06:00#</value>
+            <value>#2010-12-06 12:15:00#</value>
+            <value>#2010-12-06 12:21:00#</value>
+            <value>#2010-12-06 12:23:00#</value>
+            <value>#2010-12-06 12:30:00#</value>
+            <value>#2010-12-06 12:31:00#</value>
+            <value>#2010-12-06 12:34:00#</value>
+            <value>#2010-12-06 12:38:00#</value>
+            <value>#2010-12-06 12:39:00#</value>
+            <value>#2010-12-06 12:41:00#</value>
+            <value>#2010-12-06 12:44:00#</value>
+            <value>#2010-12-06 12:47:00#</value>
+            <value>#2010-12-06 12:52:00#</value>
+            <value>#2010-12-06 12:55:00#</value>
+            <value>#2010-12-06 12:59:00#</value>
+            <value>#2010-12-06 13:01:00#</value>
+            <value>#2010-12-06 13:13:00#</value>
+            <value>#2010-12-06 13:17:00#</value>
+            <value>#2010-12-06 13:21:00#</value>
+            <value>#2010-12-06 13:35:00#</value>
+            <value>#2010-12-06 13:47:00#</value>
+            <value>#2010-12-06 13:58:00#</value>
+            <value>#2010-12-06 14:05:00#</value>
+            <value>#2010-12-06 14:08:00#</value>
+            <value>#2010-12-06 14:19:00#</value>
+            <value>#2010-12-06 14:31:00#</value>
+            <value>#2010-12-06 14:36:00#</value>
+            <value>#2010-12-06 15:00:00#</value>
+            <value>#2010-12-06 15:03:00#</value>
+            <value>#2010-12-06 15:09:00#</value>
+            <value>#2010-12-06 15:10:00#</value>
+            <value>#2010-12-06 15:12:00#</value>
+            <value>#2010-12-06 15:14:00#</value>
+            <value>#2010-12-06 15:18:00#</value>
+            <value>#2010-12-06 15:25:00#</value>
+            <value>#2010-12-06 15:27:00#</value>
+            <value>#2010-12-06 15:34:00#</value>
+            <value>#2010-12-06 15:35:00#</value>
+            <value>#2010-12-06 15:38:00#</value>
+            <value>#2010-12-06 16:10:00#</value>
+            <value>#2010-12-06 16:36:00#</value>
+            <value>#2010-12-06 17:16:00#</value>
+            <value>#2010-12-06 17:26:00#</value>
+            <value>#2010-12-07 08:42:00#</value>
+            <value>#2010-12-07 08:57:00#</value>
+            <value>#2010-12-07 09:21:00#</value>
+            <value>#2010-12-07 09:23:00#</value>
+            <value>#2010-12-07 09:55:00#</value>
+            <value>#2010-12-07 09:57:00#</value>
+            <value>#2010-12-07 10:04:00#</value>
+            <value>#2010-12-07 10:06:00#</value>
+            <value>#2010-12-07 10:08:00#</value>
+            <value>#2010-12-07 10:14:00#</value>
+            <value>#2010-12-07 10:32:00#</value>
+            <value>#2010-12-07 10:36:00#</value>
+            <value>#2010-12-07 10:43:00#</value>
+            <value>#2010-12-07 10:47:00#</value>
+            <value>#2010-12-07 11:30:00#</value>
+            <value>#2010-12-07 11:41:00#</value>
+            <value>#2010-12-07 11:45:00#</value>
+            <value>#2010-12-07 11:47:00#</value>
+            <value>#2010-12-07 11:49:00#</value>
+            <value>#2010-12-07 11:59:00#</value>
+            <value>#2010-12-07 12:18:00#</value>
+            <value>#2010-12-07 12:21:00#</value>
+            <value>#2010-12-07 12:29:00#</value>
+            <value>#2010-12-07 12:34:00#</value>
+            <value>#2010-12-07 12:49:00#</value>
+            <value>#2010-12-07 13:01:00#</value>
+            <value>#2010-12-07 13:13:00#</value>
+            <value>#2010-12-07 13:16:00#</value>
+            <value>#2010-12-07 13:18:00#</value>
+            <value>#2010-12-07 13:20:00#</value>
+            <value>#2010-12-07 13:22:00#</value>
+            <value>#2010-12-07 13:28:00#</value>
+            <value>#2010-12-07 13:29:00#</value>
+            <value>#2010-12-07 13:45:00#</value>
+            <value>#2010-12-07 13:53:00#</value>
+            <value>#2010-12-07 14:00:00#</value>
+            <value>#2010-12-07 14:30:00#</value>
+            <value>#2010-12-07 14:31:00#</value>
+            <value>#2010-12-07 14:57:00#</value>
+            <value>#2010-12-07 14:58:00#</value>
+            <value>#2010-12-07 15:02:00#</value>
+            <value>#2010-12-07 15:03:00#</value>
+            <value>#2010-12-07 15:15:00#</value>
+            <value>#2010-12-07 15:18:00#</value>
+            <value>#2010-12-07 15:20:00#</value>
+            <value>#2010-12-07 15:39:00#</value>
+            <value>#2010-12-07 15:48:00#</value>
+            <value>#2010-12-07 16:20:00#</value>
+            <value>#2010-12-07 16:42:00#</value>
+            <value>#2010-12-07 17:19:00#</value>
+            <value>#2010-12-08 08:12:00#</value>
+            <value>#2010-12-08 08:43:00#</value>
+            <value>#2010-12-08 08:58:00#</value>
+            <value>#2010-12-08 09:07:00#</value>
+            <value>#2010-12-08 09:20:00#</value>
+            <value>#2010-12-08 09:30:00#</value>
+            <value>#2010-12-08 09:49:00#</value>
+            <value>#2010-12-08 09:51:00#</value>
+            <value>#2010-12-08 09:53:00#</value>
+            <value>#2010-12-08 09:55:00#</value>
+            <value>#2010-12-08 09:56:00#</value>
+            <value>#2010-12-08 10:11:00#</value>
+            <value>#2010-12-08 10:21:00#</value>
+            <value>#2010-12-08 10:35:00#</value>
+            <value>#2010-12-08 10:36:00#</value>
+            <value>#2010-12-08 10:38:00#</value>
+            <value>#2010-12-08 10:39:00#</value>
+            <value>#2010-12-08 10:45:00#</value>
+            <value>#2010-12-08 10:51:00#</value>
+            <value>#2010-12-08 10:53:00#</value>
+            <value>#2010-12-08 11:02:00#</value>
+            <value>#2010-12-08 11:16:00#</value>
+            <value>#2010-12-08 11:31:00#</value>
+            <value>#2010-12-08 11:33:00#</value>
+            <value>#2010-12-08 11:38:00#</value>
+            <value>#2010-12-08 11:41:00#</value>
+            <value>#2010-12-08 11:42:00#</value>
+            <value>#2010-12-08 12:01:00#</value>
+            <value>#2010-12-08 12:03:00#</value>
+            <value>#2010-12-08 12:06:00#</value>
+            <value>#2010-12-08 12:24:00#</value>
+            <value>#2010-12-08 12:35:00#</value>
+            <value>#2010-12-08 12:36:00#</value>
+            <value>#2010-12-08 12:41:00#</value>
+            <value>#2010-12-08 12:45:00#</value>
+            <value>#2010-12-08 12:46:00#</value>
+            <value>#2010-12-08 12:49:00#</value>
+            <value>#2010-12-08 12:51:00#</value>
+            <value>#2010-12-08 12:56:00#</value>
+            <value>#2010-12-08 12:57:00#</value>
+            <value>#2010-12-08 13:03:00#</value>
+            <value>#2010-12-08 13:07:00#</value>
+            <value>#2010-12-08 13:11:00#</value>
+            <value>#2010-12-08 13:28:00#</value>
+            <value>#2010-12-08 13:30:00#</value>
+            <value>#2010-12-08 13:33:00#</value>
+            <value>#2010-12-08 13:38:00#</value>
+            <value>#2010-12-08 13:49:00#</value>
+            <value>#2010-12-08 13:51:00#</value>
+            <value>#2010-12-08 13:53:00#</value>
+            <value>#2010-12-08 13:55:00#</value>
+            <value>#2010-12-08 14:20:00#</value>
+            <value>#2010-12-08 14:22:00#</value>
+            <value>#2010-12-08 14:27:00#</value>
+            <value>#2010-12-08 14:36:00#</value>
+            <value>#2010-12-08 14:38:00#</value>
+            <value>#2010-12-08 14:43:00#</value>
+            <value>#2010-12-08 14:46:00#</value>
+            <value>#2010-12-08 14:50:00#</value>
+            <value>#2010-12-08 14:53:00#</value>
+            <value>#2010-12-08 14:57:00#</value>
+            <value>#2010-12-08 14:58:00#</value>
+            <value>#2010-12-08 14:59:00#</value>
+            <value>#2010-12-08 15:01:00#</value>
+            <value>#2010-12-08 15:03:00#</value>
+            <value>#2010-12-08 15:10:00#</value>
+            <value>#2010-12-08 15:12:00#</value>
+            <value>#2010-12-08 15:16:00#</value>
+            <value>#2010-12-08 15:17:00#</value>
+            <value>#2010-12-08 15:25:00#</value>
+            <value>#2010-12-08 15:56:00#</value>
+            <value>#2010-12-08 15:58:00#</value>
+            <value>#2010-12-08 15:59:00#</value>
+            <value>#2010-12-08 16:11:00#</value>
+            <value>#2010-12-08 16:15:00#</value>
+            <value>#2010-12-08 16:18:00#</value>
+            <value>#2010-12-08 16:34:00#</value>
+            <value>#2010-12-08 16:45:00#</value>
+            <value>#2010-12-08 16:48:00#</value>
+            <value>#2010-12-09 08:34:00#</value>
+            <value>#2010-12-09 09:14:00#</value>
+            <value>#2010-12-09 09:25:00#</value>
+            <value>#2010-12-09 09:27:00#</value>
+            <value>#2010-12-09 09:34:00#</value>
+            <value>#2010-12-09 09:49:00#</value>
+            <value>#2010-12-09 10:00:00#</value>
+            <value>#2010-12-09 10:04:00#</value>
+            <value>#2010-12-09 10:13:00#</value>
+            <value>#2010-12-09 10:14:00#</value>
+            <value>#2010-12-09 10:16:00#</value>
+            <value>#2010-12-09 10:33:00#</value>
+            <value>#2010-12-09 10:37:00#</value>
+            <value>#2010-12-09 10:44:00#</value>
+            <value>#2010-12-09 10:48:00#</value>
+            <value>#2010-12-09 10:55:00#</value>
+            <value>#2010-12-09 11:30:00#</value>
+            <value>#2010-12-09 11:31:00#</value>
+            <value>#2010-12-09 11:35:00#</value>
+            <value>#2010-12-09 11:42:00#</value>
+            <value>#2010-12-09 11:48:00#</value>
+            <value>#2010-12-09 12:05:00#</value>
+            <value>#2010-12-09 12:13:00#</value>
+            <value>#2010-12-09 12:16:00#</value>
+            <value>#2010-12-09 12:20:00#</value>
+            <value>#2010-12-09 12:24:00#</value>
+            <value>#2010-12-09 12:49:00#</value>
+            <value>#2010-12-09 12:59:00#</value>
+            <value>#2010-12-09 13:03:00#</value>
+            <value>#2010-12-09 13:05:00#</value>
+            <value>#2010-12-09 13:08:00#</value>
+            <value>#2010-12-09 13:14:00#</value>
+            <value>#2010-12-09 13:28:00#</value>
+            <value>#2010-12-09 13:34:00#</value>
+            <value>#2010-12-09 13:38:00#</value>
+            <value>#2010-12-09 13:40:00#</value>
+            <value>#2010-12-09 13:47:00#</value>
+            <value>#2010-12-09 13:57:00#</value>
+            <value>#2010-12-09 13:59:00#</value>
+            <value>#2010-12-09 14:05:00#</value>
+            <value>#2010-12-09 14:08:00#</value>
+            <value>#2010-12-09 14:10:00#</value>
+            <value>#2010-12-09 14:12:00#</value>
+            <value>#2010-12-09 14:25:00#</value>
+            <value>#2010-12-09 14:27:00#</value>
+            <value>#2010-12-09 14:28:00#</value>
+            <value>#2010-12-09 14:42:00#</value>
+            <value>#2010-12-09 14:43:00#</value>
+            <value>#2010-12-09 14:44:00#</value>
+            <value>#2010-12-09 14:47:00#</value>
+            <value>#2010-12-09 14:48:00#</value>
+            <value>#2010-12-09 14:55:00#</value>
+            <value>#2010-12-09 14:56:00#</value>
+            <value>#2010-12-09 14:57:00#</value>
+            <value>#2010-12-09 14:58:00#</value>
+            <value>#2010-12-09 15:00:00#</value>
+            <value>#2010-12-09 15:01:00#</value>
+            <value>#2010-12-09 15:13:00#</value>
+            <value>#2010-12-09 15:16:00#</value>
+            <value>#2010-12-09 15:21:00#</value>
+            <value>#2010-12-09 15:23:00#</value>
+            <value>#2010-12-09 15:24:00#</value>
+            <value>#2010-12-09 15:29:00#</value>
+            <value>#2010-12-09 15:32:00#</value>
+            <value>#2010-12-09 15:33:00#</value>
+            <value>#2010-12-09 15:34:00#</value>
+            <value>#2010-12-09 15:36:00#</value>
+            <value>#2010-12-09 15:41:00#</value>
+            <value>#2010-12-09 15:43:00#</value>
+            <value>#2010-12-09 16:08:00#</value>
+            <value>#2010-12-09 16:10:00#</value>
+            <value>#2010-12-09 16:28:00#</value>
+            <value>#2010-12-09 16:52:00#</value>
+            <value>#2010-12-09 16:57:00#</value>
+            <value>#2010-12-09 18:58:00#</value>
+            <value>#2010-12-09 19:23:00#</value>
+            <value>#2010-12-09 19:28:00#</value>
+            <value>#2010-12-09 19:32:00#</value>
+            <value>#2010-12-09 20:01:00#</value>
+            <value>#2010-12-10 09:33:00#</value>
+            <value>#2010-12-10 09:51:00#</value>
+            <value>#2010-12-10 10:08:00#</value>
+            <value>#2010-12-10 10:18:00#</value>
+            <value>#2010-12-10 10:21:00#</value>
+            <value>#2010-12-10 10:26:00#</value>
+            <value>#2010-12-10 10:47:00#</value>
+            <value>#2010-12-10 10:56:00#</value>
+            <value>#2010-12-10 11:02:00#</value>
+            <value>#2010-12-10 11:11:00#</value>
+            <value>#2010-12-10 11:12:00#</value>
+            <value>#2010-12-10 11:23:00#</value>
+            <value>#2010-12-10 11:39:00#</value>
+            <value>#2010-12-10 11:44:00#</value>
+            <value>#2010-12-10 11:51:00#</value>
+            <value>#2010-12-10 12:00:00#</value>
+            <value>#2010-12-10 12:14:00#</value>
+            <value>#2010-12-10 12:29:00#</value>
+            <value>#2010-12-10 12:42:00#</value>
+            <value>#2010-12-10 12:44:00#</value>
+            <value>#2010-12-10 13:06:00#</value>
+            <value>#2010-12-10 13:24:00#</value>
+            <value>#2010-12-10 13:29:00#</value>
+            <value>#2010-12-10 13:32:00#</value>
+            <value>#2010-12-10 13:48:00#</value>
+            <value>#2010-12-10 13:50:00#</value>
+            <value>#2010-12-10 14:45:00#</value>
+            <value>#2010-12-10 14:53:00#</value>
+            <value>#2010-12-10 14:54:00#</value>
+            <value>#2010-12-10 15:21:00#</value>
+            <value>#2010-12-10 15:45:00#</value>
+            <value>#2010-12-10 15:56:00#</value>
+            <value>#2010-12-10 17:05:00#</value>
+            <value>#2010-12-10 17:14:00#</value>
+            <value>#2010-12-10 17:26:00#</value>
+            <value>#2010-12-12 10:57:00#</value>
+            <value>#2010-12-12 11:06:00#</value>
+            <value>#2010-12-12 11:17:00#</value>
+            <value>#2010-12-12 11:19:00#</value>
+            <value>#2010-12-12 11:23:00#</value>
+            <value>#2010-12-12 11:26:00#</value>
+            <value>#2010-12-12 11:44:00#</value>
+            <value>#2010-12-12 11:49:00#</value>
+            <value>#2010-12-12 12:00:00#</value>
+            <value>#2010-12-12 12:01:00#</value>
+            <value>#2010-12-12 12:03:00#</value>
+            <value>#2010-12-12 12:08:00#</value>
+            <value>#2010-12-12 12:18:00#</value>
+            <value>#2010-12-12 12:24:00#</value>
+            <value>#2010-12-12 12:35:00#</value>
+            <value>#2010-12-12 12:44:00#</value>
+            <value>#2010-12-12 12:56:00#</value>
+            <value>#2010-12-12 13:26:00#</value>
+            <value>#2010-12-12 13:32:00#</value>
+            <value>#2010-12-12 13:37:00#</value>
+            <value>#2010-12-12 13:47:00#</value>
+            <value>#2010-12-12 13:56:00#</value>
+            <value>#2010-12-12 14:03:00#</value>
+            <value>#2010-12-12 14:21:00#</value>
+            <value>#2010-12-12 14:27:00#</value>
+            <value>#2010-12-12 14:43:00#</value>
+            <value>#2010-12-12 14:49:00#</value>
+            <value>#2010-12-12 16:05:00#</value>
+            <value>#2010-12-12 16:14:00#</value>
+            <value>#2010-12-12 16:20:00#</value>
+            <value>#2010-12-13 09:29:00#</value>
+            <value>#2010-12-13 09:39:00#</value>
+            <value>#2010-12-13 09:49:00#</value>
+            <value>#2010-12-13 09:52:00#</value>
+            <value>#2010-12-13 09:57:00#</value>
+            <value>#2010-12-13 10:24:00#</value>
+            <value>#2010-12-13 10:31:00#</value>
+            <value>#2010-12-13 11:23:00#</value>
+            <value>#2010-12-13 11:29:00#</value>
+            <value>#2010-12-13 11:47:00#</value>
+            <value>#2010-12-13 11:51:00#</value>
+            <value>#2010-12-13 11:57:00#</value>
+            <value>#2010-12-13 12:10:00#</value>
+            <value>#2010-12-13 12:50:00#</value>
+            <value>#2010-12-13 12:57:00#</value>
+            <value>#2010-12-13 13:09:00#</value>
+            <value>#2010-12-13 13:10:00#</value>
+            <value>#2010-12-13 13:25:00#</value>
+            <value>#2010-12-13 13:28:00#</value>
+            <value>#2010-12-13 13:32:00#</value>
+            <value>#2010-12-13 13:50:00#</value>
+            <value>#2010-12-13 13:52:00#</value>
+            <value>#2010-12-13 14:24:00#</value>
+            <value>#2010-12-13 14:32:00#</value>
+            <value>#2010-12-13 14:37:00#</value>
+            <value>#2010-12-13 14:55:00#</value>
+            <value>#2010-12-13 15:12:00#</value>
+            <value>#2010-12-13 15:16:00#</value>
+            <value>#2010-12-13 15:20:00#</value>
+            <value>#2010-12-13 15:34:00#</value>
+            <value>#2010-12-13 15:44:00#</value>
+            <value>#2010-12-13 16:17:00#</value>
+            <value>#2010-12-13 16:38:00#</value>
+            <value>#2010-12-13 17:40:00#</value>
+            <value>#2010-12-14 09:50:00#</value>
+            <value>#2010-12-14 09:54:00#</value>
+            <value>#2010-12-14 10:18:00#</value>
+            <value>#2010-12-14 10:28:00#</value>
+            <value>#2010-12-14 10:31:00#</value>
+            <value>#2010-12-14 10:43:00#</value>
+            <value>#2010-12-14 10:46:00#</value>
+            <value>#2010-12-14 10:48:00#</value>
+            <value>#2010-12-14 10:50:00#</value>
+            <value>#2010-12-14 10:53:00#</value>
+            <value>#2010-12-14 11:01:00#</value>
+            <value>#2010-12-14 11:09:00#</value>
+            <value>#2010-12-14 11:12:00#</value>
+            <value>#2010-12-14 11:24:00#</value>
+            <value>#2010-12-14 11:38:00#</value>
+            <value>#2010-12-14 11:43:00#</value>
+            <value>#2010-12-14 11:51:00#</value>
+            <value>#2010-12-14 11:55:00#</value>
+            <value>#2010-12-14 12:06:00#</value>
+            <value>#2010-12-14 12:11:00#</value>
+            <value>#2010-12-14 12:18:00#</value>
+            <value>#2010-12-14 12:22:00#</value>
+            <value>#2010-12-14 12:25:00#</value>
+            <value>#2010-12-14 12:35:00#</value>
+            <value>#2010-12-14 12:38:00#</value>
+            <value>#2010-12-14 12:58:00#</value>
+            <value>#2010-12-14 12:59:00#</value>
+            <value>#2010-12-14 13:03:00#</value>
+            <value>#2010-12-14 13:06:00#</value>
+            <value>#2010-12-14 13:11:00#</value>
+            <value>#2010-12-14 13:19:00#</value>
+            <value>#2010-12-14 13:27:00#</value>
+            <value>#2010-12-14 13:32:00#</value>
+            <value>#2010-12-14 13:35:00#</value>
+            <value>#2010-12-14 13:50:00#</value>
+            <value>#2010-12-14 14:26:00#</value>
+            <value>#2010-12-14 14:37:00#</value>
+            <value>#2010-12-14 14:54:00#</value>
+            <value>#2010-12-14 15:13:00#</value>
+            <value>#2010-12-14 15:16:00#</value>
+            <value>#2010-12-14 15:50:00#</value>
+            <value>#2010-12-14 16:07:00#</value>
+            <value>#2010-12-15 09:07:00#</value>
+            <value>#2010-12-15 09:09:00#</value>
+            <value>#2010-12-15 09:58:00#</value>
+            <value>#2010-12-15 10:04:00#</value>
+            <value>#2010-12-15 10:17:00#</value>
+            <value>#2010-12-15 10:31:00#</value>
+            <value>#2010-12-15 10:41:00#</value>
+            <value>#2010-12-15 10:54:00#</value>
+            <value>#2010-12-15 10:57:00#</value>
+            <value>#2010-12-15 11:22:00#</value>
+            <value>#2010-12-15 11:39:00#</value>
+            <value>#2010-12-15 11:56:00#</value>
+            <value>#2010-12-15 12:01:00#</value>
+            <value>#2010-12-15 12:05:00#</value>
+            <value>#2010-12-15 12:06:00#</value>
+            <value>#2010-12-15 12:09:00#</value>
+            <value>#2010-12-15 12:27:00#</value>
+            <value>#2010-12-15 12:43:00#</value>
+            <value>#2010-12-15 12:54:00#</value>
+            <value>#2010-12-15 13:21:00#</value>
+            <value>#2010-12-15 13:24:00#</value>
+            <value>#2010-12-15 13:25:00#</value>
+            <value>#2010-12-15 13:37:00#</value>
+            <value>#2010-12-15 13:38:00#</value>
+            <value>#2010-12-15 14:00:00#</value>
+            <value>#2010-12-15 14:12:00#</value>
+            <value>#2010-12-15 14:25:00#</value>
+            <value>#2010-12-15 14:35:00#</value>
+            <value>#2010-12-15 14:42:00#</value>
+            <value>#2010-12-15 14:45:00#</value>
+            <value>#2010-12-15 15:00:00#</value>
+            <value>#2010-12-15 15:14:00#</value>
+            <value>#2010-12-15 15:34:00#</value>
+            <value>#2010-12-15 15:37:00#</value>
+            <value>#2010-12-15 15:45:00#</value>
+            <value>#2010-12-15 15:47:00#</value>
+            <value>#2010-12-15 15:50:00#</value>
+            <value>#2010-12-15 16:03:00#</value>
+            <value>#2010-12-15 16:19:00#</value>
+            <value>#2010-12-15 16:21:00#</value>
+            <value>#2010-12-15 16:34:00#</value>
+            <value>#2010-12-15 16:36:00#</value>
+            <value>#2010-12-15 16:42:00#</value>
+            <value>#2010-12-15 16:56:00#</value>
+            <value>#2010-12-15 17:04:00#</value>
+            <value>#2010-12-15 17:05:00#</value>
+            <value>#2010-12-15 17:28:00#</value>
+            <value>#2010-12-16 08:39:00#</value>
+            <value>#2010-12-16 08:41:00#</value>
+            <value>#2010-12-16 09:22:00#</value>
+            <value>#2010-12-16 09:31:00#</value>
+            <value>#2010-12-16 09:35:00#</value>
+            <value>#2010-12-16 09:46:00#</value>
+            <value>#2010-12-16 09:48:00#</value>
+            <value>#2010-12-16 10:08:00#</value>
+            <value>#2010-12-16 10:18:00#</value>
+            <value>#2010-12-16 10:28:00#</value>
+            <value>#2010-12-16 10:30:00#</value>
+            <value>#2010-12-16 10:38:00#</value>
+            <value>#2010-12-16 10:51:00#</value>
+            <value>#2010-12-16 11:10:00#</value>
+            <value>#2010-12-16 11:11:00#</value>
+            <value>#2010-12-16 11:27:00#</value>
+            <value>#2010-12-16 11:36:00#</value>
+            <value>#2010-12-16 11:43:00#</value>
+            <value>#2010-12-16 12:11:00#</value>
+            <value>#2010-12-16 12:15:00#</value>
+            <value>#2010-12-16 12:20:00#</value>
+            <value>#2010-12-16 12:23:00#</value>
+            <value>#2010-12-16 12:46:00#</value>
+            <value>#2010-12-16 13:00:00#</value>
+            <value>#2010-12-16 13:02:00#</value>
+            <value>#2010-12-16 13:05:00#</value>
+            <value>#2010-12-16 13:33:00#</value>
+            <value>#2010-12-16 13:43:00#</value>
+            <value>#2010-12-16 13:44:00#</value>
+            <value>#2010-12-16 14:17:00#</value>
+            <value>#2010-12-16 14:26:00#</value>
+            <value>#2010-12-16 14:34:00#</value>
+            <value>#2010-12-16 14:35:00#</value>
+            <value>#2010-12-16 14:36:00#</value>
+            <value>#2010-12-16 15:23:00#</value>
+            <value>#2010-12-16 15:27:00#</value>
+            <value>#2010-12-16 15:29:00#</value>
+            <value>#2010-12-16 15:40:00#</value>
+            <value>#2010-12-16 15:45:00#</value>
+            <value>#2010-12-16 15:59:00#</value>
+            <value>#2010-12-16 16:05:00#</value>
+            <value>#2010-12-16 16:36:00#</value>
+            <value>#2010-12-16 16:42:00#</value>
+            <value>#2010-12-16 16:45:00#</value>
+            <value>#2010-12-16 17:01:00#</value>
+            <value>#2010-12-16 17:34:00#</value>
+            <value>#2010-12-16 17:37:00#</value>
+            <value>#2010-12-16 17:49:00#</value>
+            <value>#2010-12-16 17:53:00#</value>
+            <value>#2010-12-16 18:01:00#</value>
+            <value>#2010-12-16 18:18:00#</value>
+            <value>#2010-12-16 18:20:00#</value>
+            <value>#2010-12-16 18:23:00#</value>
+            <value>#2010-12-16 18:38:00#</value>
+            <value>#2010-12-16 19:04:00#</value>
+            <value>#2010-12-16 19:09:00#</value>
+            <value>#2010-12-16 19:51:00#</value>
+            <value>#2010-12-17 08:20:00#</value>
+            <value>#2010-12-17 09:22:00#</value>
+            <value>#2010-12-17 09:45:00#</value>
+            <value>#2010-12-17 09:52:00#</value>
+            <value>#2010-12-17 11:23:00#</value>
+            <value>#2010-12-17 11:30:00#</value>
+            <value>#2010-12-17 11:40:00#</value>
+            <value>#2010-12-17 11:43:00#</value>
+            <value>#2010-12-17 11:51:00#</value>
+            <value>#2010-12-17 12:19:00#</value>
+            <value>#2010-12-17 12:43:00#</value>
+            <value>#2010-12-17 12:56:00#</value>
+            <value>#2010-12-17 13:49:00#</value>
+            <value>#2010-12-17 13:56:00#</value>
+            <value>#2010-12-17 13:57:00#</value>
+            <value>#2010-12-17 14:15:00#</value>
+            <value>#2010-12-17 14:21:00#</value>
+            <value>#2010-12-17 14:23:00#</value>
+            <value>#2010-12-17 14:46:00#</value>
+            <value>#2010-12-17 15:14:00#</value>
+            <value>#2010-12-17 15:52:00#</value>
+            <value>#2010-12-17 15:58:00#</value>
+            <value>#2010-12-17 17:23:00#</value>
+            <value>#2010-12-19 11:35:00#</value>
+            <value>#2010-12-19 12:46:00#</value>
+            <value>#2010-12-19 14:03:00#</value>
+            <value>#2010-12-19 14:16:00#</value>
+            <value>#2010-12-19 14:41:00#</value>
+            <value>#2010-12-19 14:58:00#</value>
+            <value>#2010-12-19 15:07:00#</value>
+            <value>#2010-12-20 08:27:00#</value>
+            <value>#2010-12-20 09:22:00#</value>
+            <value>#2010-12-20 09:37:00#</value>
+            <value>#2010-12-20 10:09:00#</value>
+            <value>#2010-12-20 10:41:00#</value>
+            <value>#2010-12-20 11:01:00#</value>
+            <value>#2010-12-20 11:14:00#</value>
+            <value>#2010-12-20 11:56:00#</value>
+            <value>#2010-12-20 11:58:00#</value>
+            <value>#2010-12-20 12:01:00#</value>
+            <value>#2010-12-20 12:45:00#</value>
+            <value>#2010-12-20 13:31:00#</value>
+            <value>#2010-12-20 13:52:00#</value>
+            <value>#2010-12-20 13:58:00#</value>
+            <value>#2010-12-20 14:15:00#</value>
+            <value>#2010-12-20 14:49:00#</value>
+            <value>#2010-12-20 16:08:00#</value>
+            <value>#2010-12-21 09:47:00#</value>
+            <value>#2010-12-21 10:54:00#</value>
+            <value>#2010-12-21 11:00:00#</value>
+            <value>#2010-12-21 13:03:00#</value>
+            <value>#2010-12-21 13:34:00#</value>
+            <value>#2010-12-21 13:49:00#</value>
+            <value>#2010-12-21 13:53:00#</value>
+            <value>#2010-12-21 14:26:00#</value>
+            <value>#2010-12-21 14:54:00#</value>
+            <value>#2010-12-21 15:43:00#</value>
+            <value>#2010-12-21 17:16:00#</value>
+            <value>#2010-12-22 10:29:00#</value>
+            <value>#2010-12-22 11:07:00#</value>
+            <value>#2010-12-22 12:47:00#</value>
+            <value>#2010-12-22 13:13:00#</value>
+            <value>#2010-12-22 13:20:00#</value>
+            <value>#2010-12-22 13:48:00#</value>
+            <value>#2010-12-22 14:28:00#</value>
+            <value>#2010-12-23 09:55:00#</value>
+            <value>#2010-12-23 09:59:00#</value>
+            <value>#2010-12-23 10:38:00#</value>
+            <value>#2010-12-23 11:46:00#</value>
+            <value>#2010-12-23 12:58:00#</value>
+            <value>#2010-12-23 14:06:00#</value>
+            <value>#2010-12-23 14:35:00#</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+      <column caption='Invoice No' datatype='integer' name='[InvoiceNo]' role='measure' type='quantitative' />
+      <column caption='Stock Code' datatype='string' name='[StockCode]' role='dimension' type='nominal' />
+      <column caption='Unit Price' datatype='real' name='[UnitPrice]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_0C9A5920E6134D05B5883983B69C45AA]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1124492588321918981]' derivation='Month-Trunc' name='[tmn:Calculation_1124492588321918981:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Chiga/AppData/Local/Temp/TableauTemp/#TableauTemp_1q9hvym15uxxj618ztjy81xarqum.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/23/2025 02:12:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>InvoiceNo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InvoiceNo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceNo</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45953</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StockCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StockCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StockCode</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11315</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11635</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>376</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceDate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[InvoiceDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceDate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>45358</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UnitPrice</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UnitPrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UnitPrice</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>861</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CustomerID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CustomerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CustomerID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12892</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0C9A5920E6134D05B5883983B69C45AA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[tmn:Calculation_1124492588321918981:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2011-08-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2010-12-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2011-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2011-12-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2011-09-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2011-05-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2011-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2011-06-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2011-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2011-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2011-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2011-11-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2011-03-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_0C9A5920E6134D05B5883983B69C45AA'>
+            <properties context=''>
+              <relation connection='excel-direct.1rvp0h004fd07e1ghohy9077bdz3' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='InvoiceNo' ordinal='0' />
+                  <column datatype='string' name='StockCode' ordinal='1' />
+                  <column datatype='string' name='Description' ordinal='2' />
+                  <column datatype='integer' name='Quantity' ordinal='3' />
+                  <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+                  <column datatype='real' name='UnitPrice' ordinal='5' />
+                  <column datatype='integer' name='CustomerID' ordinal='6' />
+                  <column datatype='string' name='Country' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Online Retail_clean)' name='federated.15bitu516t4fv81c6rg4j0k4gh6y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15bitu516t4fv81c6rg4j0k4gh6y'>
+            <column caption='Cohort' datatype='datetime' name='[Calculation_1124492588321918981]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED([CustomerID]):MIN([InvoiceDate])}' />
+            </column>
+            <column caption='Total Price Invoiced' datatype='real' name='[Calculation_1124492588637716494]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[UnitPrice]*[Quantity]' />
+            </column>
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='real' name='[UnitPrice]' role='measure' type='quantitative' />
+            <column-instance column='[InvoiceDate]' derivation='Max' name='[max:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CustomerID]' derivation='None' name='[none:CustomerID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1124492588637716494]' derivation='Sum' name='[sum:Calculation_1124492588637716494:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1124492588321918981]' derivation='Month-Trunc' name='[tmn:Calculation_1124492588321918981:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[max:InvoiceDate:qk]' included-values='in-range'>
+            <min>#2010-12-23 16:06:00#</min>
+            <max>#2011-11-30 23:59:59#</max>
+          </filter>
+          <filter class='categorical' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CustomerID:ok]' />
+              <groupfilter function='member' level='[none:CustomerID:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]</column>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[max:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[sum:Calculation_1124492588637716494:qk]</rows>
+        <cols>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:InvoiceDate:qk]</cols>
+      </table>
+      <simple-id uuid='{2F6EC603-6141-4020-A49A-B02A7FCAC3CB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Online Retail_clean)' name='federated.15bitu516t4fv81c6rg4j0k4gh6y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15bitu516t4fv81c6rg4j0k4gh6y'>
+            <column caption='Cohort' datatype='datetime' name='[Calculation_1124492588321918981]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED([CustomerID]):MIN([InvoiceDate])}' />
+            </column>
+            <column aggregation='Sum' caption='Cohort Index' datatype='integer' datatype-customized='true' name='[Calculation_1124492588331532295]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='INT(DATEDIFF(&apos;month&apos;,[Calculation_1124492588321918981],[InvoiceDate]))' />
+            </column>
+            <column caption='Retention Pct' datatype='real' name='[Calculation_1124492588625010696]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(COUNTD([CustomerID]))/sum(&#13;&#10;    {FIXED [Calculation_1124492588331532295],DATETRUNC(&apos;month&apos;,[Calculation_1124492588321918981]):sum({FIXED DATETRUNC(&apos;month&apos;,[Calculation_1124492588321918981]):countd([CustomerID])})})' />
+            </column>
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column-instance column='[InvoiceDate]' derivation='Max' name='[max:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1124492588331532295]' derivation='None' name='[none:Calculation_1124492588331532295:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CustomerID]' derivation='None' name='[none:CustomerID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1124492588321918981]' derivation='Month-Trunc' name='[tmn:Calculation_1124492588321918981:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1124492588625010696]' derivation='User' name='[usr:Calculation_1124492588625010696:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[max:InvoiceDate:qk]' included-values='in-range'>
+            <min>#2010-12-23 16:06:00#</min>
+            <max>#2011-11-30 23:59:59#</max>
+          </filter>
+          <filter class='categorical' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' user:ui-pattern-exclude='true'>
+              <groupfilter function='level-members' level='[none:CustomerID:ok]' />
+              <groupfilter function='member' level='[none:CustomerID:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[max:InvoiceDate:qk]</column>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588331532295:ok]' value='88' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588625010696:qk]</rows>
+        <cols>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588331532295:ok]</cols>
+      </table>
+      <simple-id uuid='{E5F356B1-EAEE-4D52-A5AC-E6C397BDA671}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Online Retail_clean)' name='federated.15bitu516t4fv81c6rg4j0k4gh6y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15bitu516t4fv81c6rg4j0k4gh6y'>
+            <column caption='Cohort' datatype='datetime' name='[Calculation_1124492588321918981]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED([CustomerID]):MIN([InvoiceDate])}' />
+            </column>
+            <column aggregation='Sum' caption='Cohort Index' datatype='integer' datatype-customized='true' name='[Calculation_1124492588331532295]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='INT(DATEDIFF(&apos;month&apos;,[Calculation_1124492588321918981],[InvoiceDate]))' />
+            </column>
+            <column caption='Retention Pct' datatype='real' name='[Calculation_1124492588625010696]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(COUNTD([CustomerID]))/sum(&#13;&#10;    {FIXED [Calculation_1124492588331532295],DATETRUNC(&apos;month&apos;,[Calculation_1124492588321918981]):sum({FIXED DATETRUNC(&apos;month&apos;,[Calculation_1124492588321918981]):countd([CustomerID])})})' />
+            </column>
+            <column caption='[Retention Pct] * 100' datatype='real' name='[Calculation_1124492588649005073]' role='measure' type='quantitative' user:unnamed='Sheet 3'>
+              <calculation class='tableau' formula='[Calculation_1124492588625010696] * 100' />
+            </column>
+            <column caption='[Retention Pct]*100' datatype='real' name='[Calculation_1124492588664041490]' role='measure' type='quantitative' user:unnamed='Sheet 3'>
+              <calculation class='tableau' formula='[Calculation_1124492588625010696]*100' />
+            </column>
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column-instance column='[InvoiceDate]' derivation='Max' name='[max:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1124492588331532295]' derivation='None' name='[none:Calculation_1124492588331532295:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CustomerID]' derivation='None' name='[none:CustomerID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1124492588321918981]' derivation='Month-Trunc' name='[tmn:Calculation_1124492588321918981:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1124492588625010696]' derivation='User' name='[usr:Calculation_1124492588625010696:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1124492588649005073]' derivation='User' name='[usr:Calculation_1124492588649005073:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1124492588664041490]' derivation='User' name='[usr:Calculation_1124492588664041490:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588625010696:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588649005073:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[max:InvoiceDate:qk]' included-values='in-range'>
+            <min>#2010-12-23 16:06:00#</min>
+            <max>#2011-11-30 23:59:59#</max>
+          </filter>
+          <filter class='categorical' column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CustomerID:ok]' />
+              <groupfilter function='member' level='[none:CustomerID:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[:Measure Names]</column>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[max:InvoiceDate:qk]</column>
+            <column>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588331532295:ok]' value='72' />
+            <format attr='height' field='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]' value='39' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]' value='124' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.75' field='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588625010696:qk]' min='0.0' palette='blue_10_0' type='interpolated' />
+            <encoding attr='color' center='0.75' field='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588664041490:qk]' min='0.0' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588625010696:qk]' />
+              <text column='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588664041490:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]</rows>
+        <cols>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588331532295:ok]</cols>
+      </table>
+      <simple-id uuid='{90402B88-247A-4F98-AEA5-B2069ADCBD92}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[First Invoice Date (group)]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588321148931:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321148931:qk]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[yr:Calculation_1124492588319846402:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[yr:InvoiceDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DCD9E8E9-C5DF-414A-A428-17F3FF25C698}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588331532295:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588636303371:qk]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588636327948:qk]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[pcto:ctd:CustomerID:qk:3]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:Calculation_1124492588321918981:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[tmn:InvoiceDate:qk]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[yr:Calculation_1124492588321918981:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[yr:InvoiceDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{784C3C6F-66F6-44F1-80DE-9D3D4E7BF7B7}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15bitu516t4fv81c6rg4j0k4gh6y].[usr:Calculation_1124492588625010696:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:Calculation_1124492588331532295:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[none:CustomerID:ok]</field>
+            <field>[federated.15bitu516t4fv81c6rg4j0k4gh6y].[yr:Calculation_1124492588321918981:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E3DD8CB-A48C-437C-BD94-C6A02A5678DC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAQdElEQVR4nO3daYgk533H8e9T3V19H9Pd03P0zO7Mrlarw0KSFcu7RhCDsXEIkfImAZO8
+      CNHLQPIur/IqLwMh7wOBQEIgAYMdEwhYFs6hOBayLa1keaU9ZufuOfo+q+t48mLl9Y68kbpn
+      u3qnt/4f2FfbzzHD/LrqqfrXU0prrREioIxJdSQ5ErNoYgHwPG9SXQkxNRMLgBCzSAIgAk0C
+      IAJNAiACTQIgAk0CIAJNAiACTQIgAk0CIAJNAiACTQIgAi38Wf+ptcedO1uUl+Y5qHXIJUJU
+      aj1ycYMBEXLJBLZjk8/npzVfISbqMwOglEEsHsWMJQkbLZodm3hE0Xc1Slt89P51Ljx/Fc/z
+      8DxPKkLFzPmcI4DD4d4e2tPsVyoszM/T6Frk4gaWjrB++RkG7TpGagGtNaFQaFrzFmIi1KQe
+      iHFdVwIgZo4sgkWgSQBEoEkARKBJAESgSQBEoEkARKBJAESgSQBEoEkARKBJAESgSQBEoH1u
+      OfTGxharSwU+3tinvJTnsN4lFw9h6QjZVBzbcShIObSYUZ9bDLdf2cdzXOZTcG3fYzGl8BQo
+      rTnY2uDC81fJJcK4rotSalrzFmIiPjMAWjtc+9k1CsUitWab0vwc1WbvXjl0NhVnaHssLZak
+      GlTMJCmHFoEmi2ARaBIAEWgSABFoEgARaBIAEWgSABFoEgARaBIAEWgSABFoEgARaBIAEWif
+      WQ79S+6wz3alxnIpx2G9S/aTcuhU3MR1XZLJpN/zFMIXIwXg+OiQRmWHardMIQ7VoQLtsX2j
+      wsqTzxGX3aHFjBopAHP5AodHdTJxqLd7ZGMGQyKUFhbpdbvM51KyO7SYSVIOLQJNFsEi0CQA
+      ItAkACLQJAAi0CQAItAkACLQJAAi0CQAItAkACLQJAAi0CQAItBGK4e2B2zuHLC8UOCo0SP7
+      yd6gqXgU13VIpVJ+z1MIX4wUgGb1mFbtiIGnSIY0Nfvu7tA7N/ZYufw8CSmHFjNqpAB4WqOU
+      Rnkutd6AXFwx0CalpWX63Q5GLinl0GImSTm0CDRZBItAkwCIQJMAiECTAIhAkwCIQJMAiECT
+      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
+      Hx3xf/cpCDMNwtD5AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,1 +1,7 @@
-# Online_Retail
+# Online Retail
+
+A notable amount of shopping in the modern age can be done online. You can buy anything from clothes, kitchen supplies, food, electronics, and even small personal business goods. And how well a company is able to market their products to the right consumers is can determine their success. With how incorporated data collection has become and the advent of artificial intelligence, businesses are able to track hundreds of data points and use that data to improve their marketing tactics, product development, advertising, and customer experience. One such measure is called RFM analysis.
+
+RFM analysis is usuaully run on cohorts and stands for Recency, Frequency, and Monetary. Recency is defined by how recently a customer has purchased or used your product. Frequency is how often that customer purchases or uses that product. Lastly, the monetary aspect is defined as how much that customer has spent in total. Together they are used to evaluate which customers hold more value and create targeted marketing schemes.
+
+The purpose of this repository is to perform RFM analysis and analyze any patterns between customers on a publicly available dataset taken from the University of California Irvine Machine Learning repository, linked [here](https://archive.ics.uci.edu/dataset/352/online+retail). The data uses a year-and-a-half worth of transactional data from a fictional UK based online retail store.
