@@ -1,0 +1,14 @@
+services:
+  xgb-api:
+    build:
+      context: ../..
+      dockerfile: Models/XGBoost/Dockerfile
+
+    image: xgb_churn_model:latest
+
+    container_name: xgb_churn_model
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
